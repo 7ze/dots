@@ -1,0 +1,7 @@
+[user]
+	name = The-sad-philosopher
+	email = shinudonney@tuta.io
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
