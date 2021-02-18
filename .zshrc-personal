@@ -3,6 +3,7 @@
 alias vi="nvim"
 alias vim="nvim"
 alias zshrc="vi ~/.zshrc"
+alias zshrc-personal="vi ~/.zshrc-personal"
 alias xr="vi ~/.Xresources"
 alias rc.lua="vi ~/.config/awesome/rc.lua"
 alias alacritty.yml="vi ~/.config/alacritty/alacritty.yml"
