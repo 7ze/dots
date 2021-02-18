@@ -115,7 +115,7 @@ local modkey1      = "Control"
 
 -- personal variables
 --change these variables if you want
-local browser1          = "vivaldi-stable"
+local browser1          = "qutebrowser"
 local browser2          = "firefox"
 local browser3          = "chromium -no-default-browser-check"
 local editor            = os.getenv("EDITOR") or "vim"
@@ -350,8 +350,6 @@ globalkeys = my_table.join(
         {description = "conky-toggle", group = "super"}),
     awful.key({ modkey }, "e", function () awful.util.spawn( editorgui ) end,
         {description = "run gui editor", group = "super"}),
-    --awful.key({ modkey }, "h", function () awful.util.spawn( "urxvt -T 'htop task manager' -e htop" ) end,
-        --{description = "htop", group = "super"}),
     awful.key({ modkey }, "r", function () awful.util.spawn( "rofi-theme-selector" ) end,
         {description = "rofi theme selector", group = "super"}),
     awful.key({ modkey }, "t", function () awful.util.spawn( terminal ) end,
