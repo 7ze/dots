@@ -1,0 +1,7 @@
+# Personal zshrc config
+
+alias vi="nvim"
+alias vim="nvim"
+alias zshrc="vim ~/.zshrc"
+alias xr="vim ~/.Xresources"
+alias rc.lua="vim ~/.config/awesome/rc.lua"
