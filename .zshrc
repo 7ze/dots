@@ -176,16 +176,16 @@ alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
 #get the error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
 
-#nano for important configration files
+#vi for important configration files
 #know what you do in these files
-alias nlightdm="sudo nano /etc/lightdm/lightdm.conf"
-alias npacman="sudo nano /etc/pacman.conf"
-alias ngrub="sudo nano /etc/default/grub"
-alias nmkinitcpio="sudo nano /etc/mkinitcpio.conf"
-alias nslim="sudo nano /etc/slim.conf"
-alias noblogout="sudo nano /etc/oblogout.conf"
-alias nmirrorlist="sudo nano /etc/pacman.d/mirrorlist"
-alias nconfgrub="sudo nano /boot/grub/grub.cfg"
+alias vlightdm="sudo vi /etc/lightdm/lightdm.conf"
+alias vpacman="sudo vi /etc/pacman.conf"
+alias vgrub="sudo vi /etc/default/grub"
+alias vmkinitcpio="sudo vi /etc/mkinitcpio.conf"
+alias vslim="sudo vi /etc/slim.conf"
+alias voblogout="sudo vi /etc/oblogout.conf"
+alias vmirrorlist="sudo vi /etc/pacman.d/mirrorlist"
+alias vconfgrub="sudo vi /boot/grub/grub.cfg"
 
 #gpg
 #verify signature for isos
