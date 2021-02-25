@@ -1,0 +1,18 @@
+# Personal zshrc config
+
+
+# NVM config
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+## aliases
+alias vi="nvim"
+alias vim="nvim"
+alias zshrc="vi ~/.zshrc"
+alias zshrc-personal="vi ~/.zshrc-personal"
+alias bashrc="vi ~/.bashrc"
+alias xr="vi ~/.Xresources"
+alias i3="vi ~/.config/i3/config"
+alias polybar="vi ~/.config/polybar"
+alias alacritty.yml="vi ~/.config/alacritty/alacritty.yml"
+alias kitty.conf="vi ~/.config/kitty/kitty.conf"
