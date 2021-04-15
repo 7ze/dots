@@ -18,6 +18,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork # i3lock
 exec --no-startup-id nm-applet # network manager
 exec_always --no-startup-id feh --bg-fill /home/kingslayer/Downloads/wall_2.png # wallpaper
 
+
 # adjust volume using PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume 		exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -28,6 +29,9 @@ bindsym XF86AudioMicMute 		exec --no-startup-id pactl set-source-mute @DEFAULT_S
 # adjust brightness with default keyboard ctrls
 bindsym XF86MonBrightnessUp 		exec xbacklight -inc 10 
 bindsym XF86MonBrightnessDown 		exec xbacklight -dec 10
+
+# Setting up dual monitor set up
+bindsym $mod+shift+d 			exec --no-startup-id xrandr --output HDMI1 --mode 1600x900 --left-of eDP1
 
 # drag windows with super + mouse
 floating_modifier $mod
