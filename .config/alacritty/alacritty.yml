@@ -20,7 +20,7 @@ window:
 
   dynamic_title: true
   dynamic_padding: true
-  decorations: full
+  decorations: none
   startup_mode: Windowed
   title: Alacritty
 
