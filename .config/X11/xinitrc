@@ -1,0 +1,3 @@
+picom &
+sxhkd &
+exec bspwm
