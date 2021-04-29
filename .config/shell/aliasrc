@@ -1,0 +1,45 @@
+#!/bin/sh
+
+# sane defaults
+alias \
+      cp="cp -iv" \
+      mv="mv -iv" \
+      rm="rm -vI" \
+      mkdir="mkdir -pv" \
+      yt="youtube-dl" \
+      yta="yt -x -f bestaudio/best"
+
+
+# colorizing
+alias \
+      ll="ls -lhA --color=auto --group-directories-first" \
+      l="exa  -a --group-directories-first --icons" \
+      grep="grep --color=auto" \
+      diff="diff --color=auto" \
+      cat="bat"
+
+# git aliases
+alias \
+      g="git" \
+      ga="git add" \
+      gd="git diff" \
+      gp="git push" \
+      gc="git commit" \
+      gst="git status" \
+      gch="git checkout" \
+      gcb="git checkout -b" \
+      gcm="git checkout main" \
+      gcd="git checkout develop" \
+      glg="git log --oneline" \
+      glgg="git log --oneline --graph" \
+      glgga="git log --oneline --graph --all" \
+      gcmsg="git commit -m"
+
+# other aliases
+alias \
+      e="emacs" \
+      v="nvim" \
+      p="sudo pacman" \
+      r="ranger" \
+      z="zathura" \
+      ka="killall"
