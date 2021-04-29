@@ -107,17 +107,15 @@ ramp-capacity-1-foreground = ${colors.primary}
 
 [module/audio]
 type = internal/alsa
-format-volume = <ramp-volume>
-label-volume-foreground = ${colors.secondary}
-ramp-volume-foreground = ${colors.secondary}
-label-volume =
+format-volume = <ramp-volume> <label-volume>
+
+label-muted = ﱝ
+label-muted-foreground = #666
 
 ramp-volume-0 = 
 ramp-volume-1 = 
 ramp-volume-2 = 
 
-label-muted = ﱝ
-label-muted-foreground = ${colors.secondary}
 
 [global/wm]
 margin-top = 5
