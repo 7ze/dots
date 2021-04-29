@@ -31,7 +31,7 @@ _ focused_border_color "#767c82"
 R feh state=floating
 
 # wallpaper
-feh --no-fehbg --bg-fill ~/pictures/wallies/wallie_python.png &
+feh --no-fehbg --bg-fill ~/pictures/wallies/wallie_void.png &
 
 # polybar
 "$HOME/.config/polybar/launch.sh"
