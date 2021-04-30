@@ -18,6 +18,11 @@ export GTK2_RC_FILES="${XDG_CONFIG_HOME:-$HOME/.config}/gtk-2.0/gtkrc-2.0"
 export STARSHIP_CONFIG="${XDG_CONFIG_HOME:-$HOME/.config}/starship/config.toml"
 export ASDF_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/asdf"
 export ASDF_DATA_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/asdf"
+export NODE_REPL_HISTORY=""
+
+# other cool stuff
+# using bat to colorize man pages
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # load bashrc if existant
 [[ -f ~/.bashrc ]] && . ~/.bashrc
