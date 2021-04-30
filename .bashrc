@@ -16,5 +16,9 @@ shopt -s autocd
 # load aliases if existent
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc"
 
+# asdf
+source $HOME/.config/asdf/asdf.sh
+source $HOME/.config/asdf/completions/asdf.bash
+
 # starship prompt
 eval "$(starship init bash)"
