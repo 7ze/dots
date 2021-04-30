@@ -15,6 +15,8 @@ shopt -s autocd
 
 # load aliases if existent
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc"
+# load custom functions if existent
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/functions" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/functions"
 
 # asdf
 source $HOME/.config/asdf/asdf.sh

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# git diff with syntax highlighting
+# bat needs to be installed for this to work
+batdiff() {
+  git diff --name-only --diff-filter=d $@ | xargs bat --diff
+}
