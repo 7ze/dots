@@ -45,4 +45,5 @@ alias \
       r="ranger" \
       z="zathura" \
       ka="killall" \
-      sdn="shutdown -h now"
+      sdn="shutdown -h now" \
+      copy="xclip -i -selection clipboard"
