@@ -22,6 +22,7 @@ export NODE_REPL_HISTORY=""
 export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
 export RUSTUP_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/rustup"
 export GOPATH="${XDG_DATA_HOME:-$HOME/.local/share}/go"
+export PYTHONSTARTUP="${XDG_CONFIG_HOME:-$HOME/.config}/python/pythonstartup.py" 
 export VSCODE_PORTABLE="${XDG_DATA_HOME:-$HOME/.local/share}/vscode"
 
 # other cool stuff
