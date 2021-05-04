@@ -21,6 +21,8 @@ export ASDF_DATA_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/asdf"
 export NODE_REPL_HISTORY=""
 export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
 export RUSTUP_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/rustup"
+export GOPATH="${XDG_DATA_HOME:-$HOME/.local/share}/go"
+export VSCODE_PORTABLE="${XDG_DATA_HOME:-$HOME/.local/share}/vscode"
 
 # other cool stuff
 # using bat to colorize man pages
