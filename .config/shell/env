@@ -1,0 +1,43 @@
+#!/bin/sh
+
+####################################
+# startup file for basic variables #
+####################################
+
+# default programs:
+export VISUAL="nvim"
+export EDITOR="nvim"
+export TERMINAL="kitty"
+export BROWSER="brave"
+
+# basic variables:
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+
+# config:
+export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc-2.0"
+export ASDF_DIR="$XDG_CONFIG_HOME/asdf"
+export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonstartup.py" 
+
+# cache:
+export LESSHISTFILE=""
+export NODE_REPL_HISTORY=""
+
+# data:
+export HISTFILE="$XDG_DATA_HOME/bash/history"
+export ASDF_DATA_DIR="$XDG_DATA_HOME/asdf"
+#export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export GOPATH="$XDG_DATA_HOME/go"
+export VSCODE_PORTABLE="$XDG_DATA_HOME/vscode"
+
+# runtime:
+export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+
+# path:
+export PATH="$HOME/.local/bin:$PATH"
+
+# random:
+# bat colorizing man pages
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
