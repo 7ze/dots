@@ -38,5 +38,5 @@ export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 export PATH="${HOME}/.local/bin:${XDG_DATA_HOME}/cargo/bin:${PATH}"
 
 # random:
-# bat colorizing man pages
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# colorized man pages with bat
+[ -x "$(command -v bat)" ] && export MANPAGER="sh -c 'col -bx | bat -l man -p'"
