@@ -22,7 +22,7 @@ export ASDF_DIR="$XDG_CONFIG_HOME/asdf"
 export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonstartup.py" 
 
 # cache:
-export LESSHISTFILE=""
+export LESSHISTFILE="-"
 export NODE_REPL_HISTORY=""
 
 # data:
