@@ -42,7 +42,7 @@ alias \
       e="emacs" \
       v="nvim" \
       p="sudo pacman" \
-      r="ranger" \
+      r="ranger_cd" \
       z="zathura" \
       ka="killall" \
       sdn="shutdown -h now" \
