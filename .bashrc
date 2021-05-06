@@ -7,8 +7,12 @@
 
 # vi keybindings
 set -o vi
+
+# restoring , , ^E
 bind -m vi-command 'Control-l: clear-screen'
 bind -m vi-insert 'Control-l: clear-screen'
+bind -m vi-insert 'Control-a:beginning-of-line'
+bind -m vi-insert 'Control-e:end-of-line'
 
 # enabling autocd like in zsh
 shopt -s autocd
