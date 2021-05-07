@@ -24,6 +24,7 @@ export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonstartup.py"
 # cache:
 export LESSHISTFILE="-"
 export NODE_REPL_HISTORY=""
+export PYLINTHOME="$XDG_CACHE_HOME/pylint"
 
 # data:
 export HISTFILE="$XDG_DATA_HOME/bash/history"
