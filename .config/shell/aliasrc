@@ -16,7 +16,6 @@ alias \
       l="exa  -a --group-directories-first --icons" \
       grep="grep --color=auto" \
       diff="diff --color=auto" \
-      cat="bat"
 
 # git aliases
 alias \
