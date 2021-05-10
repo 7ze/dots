@@ -31,8 +31,9 @@
 # Screenshots
 
 ## Tiling WM
-![](https://github.com/7ze/dotfiles/blob/develop/scrots/neo.png?raw=true)
+
+![tiling window manager](https://github.com/7ze/dotfiles/blob/develop/scrots/neo.png?raw=true)
 
 ## Starship Prompt
 
-![](https://github.com/7ze/dotfiles/blob/develop/scrots/prompt.png?raw=true)
+![starship prompt](https://github.com/7ze/dotfiles/blob/develop/scrots/prompt.png?raw=true)
