@@ -13,7 +13,7 @@
 
 | Program                             | Name                                                                    |
 | :---                                | :---                                                                    |
-| Linux Distribution                  | [Arch Linux](https://www.archlinux.org/)                                |
+| OS                                  | [Arch Linux](https://www.archlinux.org/)                                |
 | Window Manager                      | [bspwm](https://github.com/baskerville/bspwm)                           |
 | Bar                                 | [polybar](https://github.com/jaagr/polybar)                             |
 | Program Launcher                    | [dmenu](https://tools.suckless.org/dmenu/)                              |
