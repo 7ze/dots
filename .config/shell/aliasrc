@@ -40,7 +40,7 @@ alias \
 alias \
       e="emacs" \
       v="nvim" \
-      p="sudo pacman" \
+      p="doas pacman" \
       r="ranger_cd" \
       z="zathura" \
       ka="killall" \
