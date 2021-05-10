@@ -1,3 +1,4 @@
-picom &
-sxhkd &
-exec bspwm
+picom &         # compositor
+dunst &         # notification daemon
+sxhkd &         # simple X hotkey daemon
+exec bspwm      # window manager
