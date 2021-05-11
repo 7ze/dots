@@ -41,7 +41,6 @@ alias \
       e="emacs" \
       v="nvim" \
       p="doas pacman" \
-      r="ranger_cd" \
       z="zathura" \
       ka="killall" \
       sdn="shutdown -h now" \
