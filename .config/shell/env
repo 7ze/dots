@@ -41,3 +41,12 @@ export PATH="${HOME}/.local/bin:${XDG_DATA_HOME}/cargo/bin:${PATH}"
 # random:
 # colorized man pages with bat
 [ -x "$(command -v bat)" ] && export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+# lf icons:
+LF_ICONS=$(sed $HOME/.config/lf/icons \
+            -e '/^[ \t]*#/d'       \
+            -e '/^[ \t]*$/d'       \
+            -e 's/[ \t]\+/=/g'     \
+            -e 's/$/ /')
+LF_ICONS=${LF_ICONS//$'\n'/:}
+export LF_ICONS
