@@ -31,7 +31,7 @@ _ focused_border_color "#767c82"
 R feh state=floating
 
 # wallpaper
-feh --no-fehbg --bg-fill ~/pictures/wallies/wallie_hello.png &
+feh --no-fehbg --bg-fill ~/pictures/wallies/wallie_umbrella_girl.png &
 
 # polybar
 "$HOME/.config/polybar/launch.sh"
