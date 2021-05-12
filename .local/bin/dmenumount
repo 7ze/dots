@@ -3,7 +3,7 @@
 flash_drives=$(lsblk -lp | awk '($3 == 1)' | awk '{printf "%s (%s)\n",$1,$4}')
 hard_drives=$(lsblk -rpo "name,type,size,mountpoint" | grep 'part\|rom' | awk '$4==""{printf "%s (%s)\n",$1,$3}')
 
-[ -z "$flash_drives" ] && [ -z "$hard_drives" ] && notify-send "No mountable drives detected!" "Exiting..." && exit 1
+[ -z "$flash_drives" ] && [ -z "$hard_drives" ] && notify-send "☠️  No mountable drives detected!" "Exiting..." && exit 1
 
 # set mountables to $hard_drives if no $flash_drives
 [ -z "$flash_drives" ] && mountables="$hard_drives"
@@ -16,24 +16,24 @@ hard_drives=$(lsblk -rpo "name,type,size,mountpoint" | grep 'part\|rom' | awk '$
 $hard_drives" 
 
 chosen="$(echo "$mountables" | dmenu -i -p "Mount which drive?" | awk '{ print $1 }')"
-[ -z "$chosen" ] && notify-send "No mountable drives selected!" "Exiting..." && exit 1
+[ -z "$chosen" ] && notify-send "☠️  No mountable drives selected!" "Exiting..." && exit 1
 # todo: send notification if program exits here
 lsblk -lp "$chosen" 1>/dev/null 2>&1 || exit 1
 
 # mount drive if mountpoint already set in fstab
-doas mount "$chosen" 2>/dev/null && notify-send "Drive mounting..." "$chosen mounted." && exit 0
+doas mount "$chosen" 2>/dev/null && notify-send "💻 Drive mounting..." "$chosen mounted." && exit 0
 
 dirs=$(find /mnt /home -maxdepth 3 -type d 2>/dev/null)
 mountpoint=$(echo "$dirs" | dmenu -i -p "Type in mount point.")
 
-[ -z "$mountpoint" ] && notify-send "No mount point specified." "Exiting..." && exit 1
+[ -z "$mountpoint" ] && notify-send "☠️ No mount point specified." "Exiting..." && exit 1
 
 # mkdir if mountpoint is non-existent
 if [ ! -d "$mountpoint" ]; then
     mkdir_choice=$(printf "No\\nYes" | dmenu -i -p "$mountpoint does not exist. Create it?" ) || exit 1
-    [ "$mkdir_choice" != "Yes"  ] && notify-send "No mount point specified." "Exiting..." && exit 1 
+    [ "$mkdir_choice" != "Yes"  ] && notify-send "☠️  No mount point specified." "Exiting..." && exit 1 
     mkdir -p "$mountpoint" 2>/dev/null || doas mkdir -p "$mountpoint"
-    notify-send "$mountpoint directory created."
+    notify-send "🍻 $mountpoint directory created."
 fi
 
 # mounting
