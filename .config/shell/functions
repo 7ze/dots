@@ -1,6 +1,0 @@
-#!/bin/bash
-
-# nicely formatted diff
-batdiff() {
-  git diff --name-only --diff-filter=d $@ | xargs bat --diff
-}
