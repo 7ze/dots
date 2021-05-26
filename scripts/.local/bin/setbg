@@ -1,0 +1,19 @@
+#!/bin/sh
+
+# author: The_philosopher
+# description: simple script that sets a background
+
+[ -z "$1" ] && echo "setbg needs an argument of PNG type!" && exit 1
+
+file_type=$(file $1 | awk '{print $2}')
+
+case "$file_type" in
+	"PNG")
+		cp "$1" "$XDG_DATA_HOME/wallies/current_wallie.png"
+		feh --no-fehbg --bg-fill "$XDG_DATA_HOME/wallies/current_wallie.png"
+		notify-send "Wallpaper set!"
+		;;
+	*)
+		echo "Invalid file type. Not compatible!" && exit 1
+		;;
+esac

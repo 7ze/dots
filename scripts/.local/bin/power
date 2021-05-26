@@ -1,0 +1,33 @@
+#!/bin/sh
+
+# author: The_philosopher
+# description: A simple script to power off the device or reboot or
+#   logout of the graphical session 
+
+nl='
+'
+options="shutdown${nl}reboot${nl}logout"
+confirm_statement="Are you sure?"
+yes_no="yes${nl}no"
+
+ans=$(echo "$options" | dmenu -i -p "What do you want to do?")
+
+confirm(){
+	confirm=$(echo "$yes_no" | dmenu -i -p "$confirm_statement")
+	[ "$confirm" = "yes" ] && $1
+}
+
+case "$ans" in
+	"shutdown")
+		confirm "shutdown -h now"
+		;;
+	"reboot")
+		confirm "reboot"
+		;;
+	"logout")
+		confirm "bspc quit"
+		;;
+	*)
+		notify-send "Invalid choice" && exit 1
+		;;
+esac
