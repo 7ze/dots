@@ -1,0 +1,56 @@
+#!/bin/sh
+
+####################################
+# startup file for basic variables #
+####################################
+
+# default programs:
+export VISUAL="nvim"
+export EDITOR="nvim"
+export TERMINAL="urxvt"
+export BROWSER="brave"
+
+# basic variables:
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+
+# config:
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonstartup.py" 
+export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME/bundle" 
+export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
+
+# cache:
+export LESSHISTFILE="-"
+export PYLINTHOME="$XDG_CACHE_HOME/pylint"
+export BUNDLE_USER_CACHE="$XDG_CACHE_HOME/bundle" 
+
+# data:
+export HISTFILE="$XDG_DATA_HOME/shell/history"
+export VSCODE_PORTABLE="$XDG_DATA_HOME/vscode"
+export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME/bundle"
+export GOPATH="$XDG_DATA_HOME/go"
+
+# runtime:
+export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
+
+# ruby:
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+
+# path:
+export PATH="${HOME}/.local/bin:${PATH}:${XDG_DATA_HOME}/cargo/bin:${GEM_HOME}/bin"
+
+
+# random:
+# colorized man pages with bat
+[ -x "$(command -v bat)" ] && export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+# lf icons:
+LF_ICONS=$(sed $HOME/.config/lf/icons \
+            -e '/^[ \t]*#/d'       \
+            -e '/^[ \t]*$/d'       \
+            -e 's/[ \t]\+/=/g'     \
+            -e 's/$/ /')
+LF_ICONS=${LF_ICONS//$'\n'/:}
+export LF_ICONS
