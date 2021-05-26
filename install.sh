@@ -9,30 +9,37 @@ install() {
    doas pacman -S "$1"
 }
 
+cleanup() {
+	stow -vD stow
+}
+
 echo "INSTALLING DOTFILES..."
 
 # check if stow is installed
-[ -x $(command -v stow) ] && echo "Stow is installed. Moving forward..." || install stow
+([ -x "$(command -v stow)" ] && echo "Stow is installed. Moving forward...") || install stow
 
+# settnig up .stow-global-ignore and .stowrc
+stow -vSt ~ stow
 # choice
 echo "Install all the dotfiles (Y/n)?"
-read ans
+read -r ans
 
 case "$ans" in
 	"y"|"Y")
 		echo "Installing all the dots to their appropriate locations..."
-		stow -nvSt ~ .
+		stow -nv .
 		echo "Confirm (Y/n)?"
-		read ans
-		[ "$ans" != "${ans#[yY]}" ] && stow -vSt ~ . || exit 1
+		read -r ans
+		([ "$ans" != "${ans#[yY]}" ] && stow -v . && cleanup) || exit 1
 		;;
 	
 	"n"|"N")
 		echo "Work in progress. Install manually for now..."
+		cleanup
 		# echo "Select dots to install..."
 		;;
 	*)
-		echo "Invalid reply\nExiting..."
-		exit 1
+		printf "Invalid reply\nExiting..."
+		cleanup && exit 1
 		;;
 esac
