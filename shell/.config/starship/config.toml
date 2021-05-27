@@ -1,0 +1,35 @@
+[line_break]
+disabled = false
+
+[character]
+success_symbol = "[ ﮂ ♥ ](bold #78FECF)"
+error_symbol = "[ ﮂ  ](bold #FF4754)"
+
+[username]
+format = "\\[[$user](bold red)[@](bold white)"
+show_always = true
+
+[hostname]
+ssh_only = false
+format = "[$hostname](bold blue)\\] "
+
+[nodejs]
+symbol = " "
+
+[docker_context]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[package]
+symbol = " "
