@@ -1,0 +1,6 @@
+#!/bin/sh
+
+xrdb "$XDG_CONFIG_HOME/x11/xresources"
+dunst &
+sxhkd &
+exec bspwm
