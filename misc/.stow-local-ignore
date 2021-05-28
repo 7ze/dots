@@ -1,0 +1,8 @@
+# list of all packages that you want to ignore / not install
+# uncomment any of these to ignore them
+
+README.*
+# htop
+# neofetch
+# bat
+# tmux
