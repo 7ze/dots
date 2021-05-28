@@ -33,9 +33,9 @@ for both single and dual monitor setup.
 ~
 └── .config
     ├── sxhkd
-    │   └── sxhkdrc           main configuration file for sxhkd
+    │   └── sxhkdrc           configuration file for sxhkd
     └── bspwm
-        └── bspwmrc           main configuration file for bspwm
+        └── bspwmrc           configuration file for bspwm
 ```
 
 I will be checking out *dwm* in the meantime. I like the *suckless philosophy* and I

@@ -2,7 +2,8 @@
 # uncomment any of these to ignore them
 
 README.*
-# htop
-# neofetch
 # bat
-# tmux
+# htop
+# lf
+# neofetch
+# zathura

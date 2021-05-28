@@ -8,8 +8,6 @@ Dotfiles of different applications, utility or otherwise
     ├── neofetch
     │   ├── fetch.png           image for neofetch
     │   └── config.conf         configuration file for neofetch
-    ├── tmux
-    │   └── tmux.conf           configuration file for tmux
     ├── htop
     │   └── htoprc              configuration file for htop
     ├── zathura
