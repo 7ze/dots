@@ -43,5 +43,6 @@ alias \
       p="doas pacman" \
       z="zathura" \
       ka="killall" \
+      cam="mpv av://v4l2:/dev/video0 --profile=low-latency --untimed"\
       sdn="shutdown -h now" \
       copy="xclip -i -selection clipboard"
