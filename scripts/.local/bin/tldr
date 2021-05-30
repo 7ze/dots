@@ -1,3 +1,6 @@
 #!/bin/sh
 
-curl cheat.sh/$1 | bat -p
+# author: The_philosopher
+# description: gets tldr/cheatsheet of commands 
+
+curl cheat.sh/"$1" | bat -p

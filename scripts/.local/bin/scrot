@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# author: The_philosopher
+# description: takes full screen screenshot
+
+scrot_location="$HOME/media/pix/scrots"
+scrot_name="$scrot_location/$(date +%s).png"
+maim "$scrot_name"
+notify-send "📸" "Screenshot taken!"

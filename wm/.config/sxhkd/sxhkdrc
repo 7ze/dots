@@ -22,6 +22,16 @@ XF86MonBrightness{Up,Down}
 XF86Audio{Raise,Lower}Volume
 	amixer set Master 5%{+,-}
 
+# screenshots	
+
+# fullscreen scrot
+Print
+	scrot
+
+# selection scrot
+super + Print
+	scrot_select
+
 #
 # bspwm hotkeys
 #

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# author: The_philosopher
+# description: select an area and take screen screenshot, additionally copies it to clipboard
+
+scrot_location="$HOME/media/pix/scrots"
+scrot_name="$scrot_location/$(date +%s).png"
+maim --select | tee "$scrot_name" | xclip -selection clipboard -t image/png
+notify-send "📸" "Screenshot taken and copied to clipboard!"
