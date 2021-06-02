@@ -41,6 +41,7 @@ alias \
       e="emacs" \
       v="nvim" \
       p="doas pacman" \
+      h="history 0 | cut -c 8- | sort | uniq | fzf | tr '\\\n' ' ' | xclip -selection clipboard" \
       z="zathura" \
       ka="killall" \
       cam="mpv av://v4l2:/dev/video0 --profile=low-latency --untimed"\
