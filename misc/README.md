@@ -15,6 +15,8 @@ Dotfiles of different applications, utility or otherwise
     ├── lf
     │   ├── icons               icons for lf 
     │   └── lfrc                configuration file for lf file manager
+    ├── cava
+    │   └── config           	configuration file for cava music visualizer
     └── bat
         └── config              configuration file for bat
 ```
