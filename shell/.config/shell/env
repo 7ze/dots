@@ -38,8 +38,11 @@ export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 # ruby:
 export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 
+# python:
+export PYTHON_BIN="$XDG_DATA_HOME/python/bin"
+
 # path:
-export PATH="${HOME}/.local/bin:${PATH}:${XDG_DATA_HOME}/cargo/bin:${GEM_HOME}/bin"
+export PATH="${HOME}/.local/bin:${PATH}:${XDG_DATA_HOME}/cargo/bin:${GEM_HOME}/bin:${PYTHON_BIN}"
 
 
 # random:
