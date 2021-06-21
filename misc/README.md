@@ -7,6 +7,8 @@ Dotfiles of different applications, utility or otherwise
 └── .config
     ├── python
     │   └── pythonstartup.py    python startup file
+    ├── paru
+    │   └── paru.conf           paru config file
     ├── neofetch
     │   ├── fetch.png           image for neofetch
     │   └── config.conf         configuration file for neofetch
