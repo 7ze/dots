@@ -31,6 +31,7 @@ export HISTFILE="$XDG_DATA_HOME/shell/history"
 export VSCODE_PORTABLE="$XDG_DATA_HOME/vscode"
 export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME/bundle"
 export GOPATH="$XDG_DATA_HOME/go"
+export NODE_REPL_HISTORY="$XDG_DATA_HOME/node/node_repl_history"
 
 # runtime:
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"

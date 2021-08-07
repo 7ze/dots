@@ -1,4 +1,7 @@
 #!/bin/sh
 
+# author: The_philosopher
+# description: simple classical music radio on the fly
+
 url="https://live.musopen.org:8085/streamvbr0"
 pkill -f $url || mpv "$url"

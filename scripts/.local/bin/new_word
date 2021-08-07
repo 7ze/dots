@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# author: The_philosopher
+# description: A quick script to store new words I find on the go
+
+word=$(echo "" | dmenu -p "Add word: ")
+meaning=$(echo "" | dmenu -p "Add meaning: ")
+echo "$word : $meaning" >> "$XDG_DATA_HOME/misc/new_words.txt"
