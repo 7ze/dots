@@ -20,6 +20,7 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonstartup.py" 
 export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME/bundle" 
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 
 # cache:
 export LESSHISTFILE="-"
