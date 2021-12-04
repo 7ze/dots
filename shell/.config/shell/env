@@ -43,8 +43,11 @@ export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 # python:
 export PYTHON_BIN="$XDG_DATA_HOME/python/bin"
 
+# npm:
+export NPM_BIN="$XDG_DATA_HOME/npm/bin"
+
 # path:
-export PATH="${HOME}/.local/bin:${PATH}:${XDG_DATA_HOME}/cargo/bin:${GEM_HOME}/bin:${PYTHON_BIN}"
+export PATH="${HOME}/.local/bin:${PATH}:${XDG_DATA_HOME}/cargo/bin:${GEM_HOME}/bin:${PYTHON_BIN}:${NPM_BIN}"
 
 
 # random:
