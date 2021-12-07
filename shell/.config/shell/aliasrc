@@ -47,5 +47,6 @@ alias \
       cam="mpv av://v4l2:/dev/video0 --profile=low-latency --untimed" \
       sdn="shutdown -h now" \
       copy="xclip -i -selection clipboard" \
+      rcava="cava | lolcat" \
       word="shuf -n 1 $XDG_DATA_HOME/misc/new_words.txt" \
       words="bat $XDG_DATA_HOME/misc/new_words.txt" \
