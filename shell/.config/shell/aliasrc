@@ -36,6 +36,11 @@ alias \
       glgga="git log --oneline --graph --all" \
       gcmsg="git commit -m"
 
+# tmux aliases
+alias \
+      tn="tmux new" \
+      ta="tmux attach" \
+
 # other aliases
 alias \
       e="emacs" \
