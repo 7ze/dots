@@ -5,6 +5,7 @@ alias \
       cp="cp -iv" \
       mv="mv -iv" \
       rm="rm -vI" \
+      rmrf="rm -rf" \
       mkdir="mkdir -pv" \
       yt="youtube-dl" \
       yta="yt -x -f bestaudio/best"
@@ -15,7 +16,7 @@ alias \
       ll="ls -lhA --color=auto --group-directories-first" \
       l="exa  -a --group-directories-first --icons" \
       grep="grep --color=auto" \
-      diff="diff --color=auto" \
+      diff="diff --color=auto"
 
 # git aliases
 alias \
@@ -38,8 +39,8 @@ alias \
 
 # tmux aliases
 alias \
-      tn="tmux new" \
-      ta="tmux attach" \
+      tn="tmux new -s $(basename $(pwd))" \
+      ta="tmux attach"
 
 # other aliases
 alias \

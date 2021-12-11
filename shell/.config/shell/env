@@ -33,6 +33,7 @@ export VSCODE_PORTABLE="$XDG_DATA_HOME/vscode"
 export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME/bundle"
 export GOPATH="$XDG_DATA_HOME/go"
 export NODE_REPL_HISTORY="$XDG_DATA_HOME/node/node_repl_history"
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
 
 # runtime:
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
