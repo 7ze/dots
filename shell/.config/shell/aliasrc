@@ -4,7 +4,8 @@
 alias \
       cp="cp -iv" \
       mv="mv -iv" \
-      rm="rm -vI" \
+      rm="rm -vi" \
+      rd="rmdir -pv" \
       rmrf="rm -rf" \
       mkdir="mkdir -pv" \
       yt="youtube-dl" \
@@ -13,14 +14,15 @@ alias \
 
 # colorizing
 alias \
+      ls="ls --color --classify --human-readable --quoting-style=escape" \
       ll="ls -lhA --color=auto --group-directories-first" \
-      l="exa  -a --group-directories-first --icons" \
+      l="exa -a --color=always --group-directories-first --classify --icons" \
       grep="grep --color=auto" \
       diff="diff --color=auto"
 
 # git aliases
 alias \
-      g="git" \
+      g='_f() { if [[ $# == 0 ]]; then git status -sb; else git "$@"; fi }; _f' \
       ga="git add" \
       gd="git diff" \
       gp="git push" \
