@@ -66,6 +66,17 @@ LF_ICONS=${LF_ICONS//$'\n'/:}
 export LF_ICONS
 
 # fzf:
+export FZF_DEFAULT_OPTS='
+      --height 75% --multi --reverse --margin=0,1
+      --bind ctrl-f:page-down,ctrl-b:page-up
+      --bind pgdn:preview-page-down,pgup:preview-page-up
+      --prompt=" "
+      --color bg+:#262626,fg+:#dadada,hl:#f09479,hl+:#f09479
+      --color border:#303030,info:#cfcfb0,header:#80a0ff,spinner:#36c692
+      --color prompt:#87afff,pointer:#ff5189,marker:#f09479
+    '
 export FZF_DEFAULT_COMMAND='fd --type f --color=never -HE ".git"'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"  # default ctrl-t keybind
+export FZF_CTRL_T_OPTS='--preview "bat --color=always --line-range :500 {}"' # bat preview
 export FZF_ALT_C_COMMAND='fd --type d . --color=never -HE ".git"' # default alt-c keybind
+export FZF_ALT_C_OPTS='--preview "tree -C {} | head -100"' # tree preview
