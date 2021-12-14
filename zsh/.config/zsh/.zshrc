@@ -46,6 +46,12 @@ bindkey '^e' edit-command-line
 bindkey -s '^o' 'lfcd\n'
 
 # fzf
+fzf_key_bindings="/usr/share/fzf/key-bindings.zsh"
+fzf_completion="/usr/share/fzf/completion.zsh"
+
+[[ -f "$fzf_key_bindings" ]] && source "$fzf_key_bindings"
+[[ -f "$fzf_completion" ]] && source "$fzf_completion"
+
 bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
 
 # starship prompt

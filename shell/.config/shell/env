@@ -52,7 +52,8 @@ export PATH="${HOME}/.local/bin:${PATH}:${XDG_DATA_HOME}/cargo/bin:${GEM_HOME}/b
 
 
 # random:
-# colorized man pages with bat
+
+# colorized man pages with bat:
 [ -x "$(command -v bat)" ] && export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # lf icons:
@@ -63,3 +64,8 @@ LF_ICONS=$(sed $HOME/.config/lf/icons \
             -e 's/$/ /')
 LF_ICONS=${LF_ICONS//$'\n'/:}
 export LF_ICONS
+
+# fzf:
+export FZF_DEFAULT_COMMAND='fd --type f --color=never -HE ".git"'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"  # default ctrl-t keybind
+export FZF_ALT_C_COMMAND='fd --type d . --color=never -HE ".git"' # default alt-c keybind
