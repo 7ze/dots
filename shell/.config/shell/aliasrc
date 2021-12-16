@@ -49,15 +49,17 @@ alias \
       ffe="fzf_find_edit" \
       fcd="fzf_change_directory" \
       fkill="fzf_kill" \
-      gadd="fzf_git_add"
+      gadd="fzf_git_add" \
+      pin="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro doas pacman -S" \
+      prm="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro doas pacman -Rns"
 
 # other aliases
 alias \
       e="emacs" \
       v="nvim" \
       p="doas pacman" \
-      h="history 0 | cut -c 8- | sort | uniq | fzf | tr '\\\n' ' ' | xclip -selection clipboard" \
       z="zathura" \
+      c="clear" \
       ka="killall" \
       cam="mpv av://v4l2:/dev/video0 --profile=low-latency --untimed" \
       sdn="shutdown -h now" \
