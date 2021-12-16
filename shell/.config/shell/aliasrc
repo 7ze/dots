@@ -44,6 +44,13 @@ alias \
       tn="tmux new -s $(basename $(pwd))" \
       ta="tmux attach"
 
+# fzf aliases
+alias \
+      ffe="fzf_find_edit" \
+      fcd="fzf_change_directory" \
+      fkill="fzf_kill" \
+      gadd="fzf_git_add"
+
 # other aliases
 alias \
       e="emacs" \
