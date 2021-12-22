@@ -1,7 +1,15 @@
-#!/bin/sh
+#!/bin/bash
 
 # author: The_philosopher
 # description: simple classical music radio on the fly
 
-url="https://live.musopen.org:8085/streamvbr0"
+declare -A radio
+radio[fantasy]="https://stonehold.se/radio/8000/radio.mp3"
+radio[medieval]="https://www.ancientfm.com/"
+radio[classical]="https://live.musopen.org:8085/streamvbr0"
+
+choice=$(echo -e "fantasy\nmedieval\nclassical" | dmenu -i -p "Choose which radio:")
+
+url="${radio[$choice]}"
+
 pkill -f $url || mpv "$url"
