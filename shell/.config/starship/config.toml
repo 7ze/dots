@@ -31,5 +31,8 @@ symbol = " "
 [rust]
 symbol = " "
 
+[lua]
+symbol = " "
+
 [package]
 symbol = " "

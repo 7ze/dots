@@ -8,7 +8,7 @@
 export VISUAL="nvim"
 export EDITOR="nvim"
 export TERMINAL="urxvt"
-export BROWSER="brave"
+export BROWSER="firefox"
 
 # basic variables:
 export XDG_DATA_HOME="$HOME/.local/share"
@@ -34,6 +34,7 @@ export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME/bundle"
 export GOPATH="$XDG_DATA_HOME/go"
 export NODE_REPL_HISTORY="$XDG_DATA_HOME/node/node_repl_history"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 
 # runtime:
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"

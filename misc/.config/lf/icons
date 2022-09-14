@@ -74,6 +74,7 @@ CMakeLists.txt 
 *.kts    
 *.gradle 
 *.rss    參
+*.lua    
 
 ## Shells and Command Interpreters
 *.bash 
