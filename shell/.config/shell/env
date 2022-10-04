@@ -7,13 +7,14 @@
 # default programs:
 export VISUAL="nvim"
 export EDITOR="nvim"
-export TERMINAL="urxvt"
+export TERMINAL="kitty"
 export BROWSER="firefox"
 
 # basic variables:
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_STATE_HOME="$HOME/.local/state"
 
 # config:
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
@@ -38,9 +39,6 @@ export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 
 # runtime:
 export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
-
-# ruby:
-export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 
 # python:
 export PYTHON_BIN="$XDG_DATA_HOME/python/bin"

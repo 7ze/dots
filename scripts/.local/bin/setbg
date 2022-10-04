@@ -10,7 +10,7 @@ file_type="$(file --mime-type -b "$1")"
 case "$file_type" in
 	"image/png")
 		cp "$1" "$XDG_DATA_HOME/wallies/current_wallie.png"
-		feh --no-fehbg --bg-fill "$XDG_DATA_HOME/wallies/current_wallie.png"
+		xwallpaper --output eDP1 --center "$XDG_DATA_HOME/wallies/current_wallie.png"
 		notify-send "Wallpaper set!"
 		;;
 	*)
