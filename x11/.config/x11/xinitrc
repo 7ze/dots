@@ -3,4 +3,5 @@
 xrdb "$XDG_CONFIG_HOME/x11/xresources"
 dunst &
 sxhkd &
+xcompmgr -c &
 exec bspwm

@@ -61,6 +61,8 @@ alias \
       z="zathura" \
       c="clear" \
       ka="killall" \
+      rg="rg --hidden --smart-case" \
+      sx="startx ~/.config/x11/xinitrc" \
       cam="mpv av://v4l2:/dev/video0 --profile=low-latency --untimed" \
       sdn="shutdown -h now" \
       copy="xclip -i -selection clipboard" \
