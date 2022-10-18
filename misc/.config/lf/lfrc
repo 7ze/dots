@@ -18,7 +18,11 @@ cmd open ${{
     esac
 }}
 
-cmd mkdir $mkdir -p "$(echo $* | tr ' ' '\ ')"
+cmd mkdir ${{
+  printf "Directory Name: "
+  read ans
+  mkdir $ans
+  }}
 
 cmd extract ${{
     set -f
