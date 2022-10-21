@@ -1,8 +1,0 @@
-#!/bin/sh
-
-# author: The_philosopher
-# description: Plays any youtube video or youtube playlist if given the url
-
-url=$(echo | dmenu -p "Enter the url of the video or the playlist to play: ")
-[ -z "$url" ] && notify-send "📵 Invalid url!" 
-mpv "$url" || notify-send "📵 Invalid url!"
