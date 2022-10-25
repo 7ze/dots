@@ -69,3 +69,4 @@ alias \
       rcava="cava | lolcat" \
       word="shuf -n 1 $XDG_DATA_HOME/misc/new_words.txt" \
       words="bat $XDG_DATA_HOME/misc/new_words.txt" \
+      audible="mpv --demuxer-lavf-o=activation_bytes=72830b37" \

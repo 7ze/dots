@@ -1,15 +1,16 @@
 #!/bin/bash
 
 # author: The_philosopher
-# description: simple classical music radio on the fly
+# description: simple music radio on the fly
 
 declare -A radio
-radio[fantasy]="https://stonehold.se/radio/8000/radio.mp3"
 radio[medieval]="https://www.ancientfm.com/"
 radio[classical]="https://live.musopen.org:8085/streamvbr0"
+radio[choir_music]="https://music.youtube.com/playlist?list=PL9HKuon05Vx-6ylBFSc3o9T55uhH8ZD3W"
+radio[gregorian_chants]="https://music.youtube.com/watch?v=m52fDOoLUks"
 
-choice=$(echo -e "fantasy\nmedieval\nclassical" | dmenu -i -p "Choose which radio:")
+choice=$(echo -e "nmedieval\nclassical\nchoir_music\ngregorian_chants" | dmenu -i -p "Choose which radio:")
 
 url="${radio[$choice]}"
 
-pkill -f $url || mpv "$url"
+pkill -f $url || mpv --no-vid "$url"
