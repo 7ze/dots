@@ -72,10 +72,9 @@ export FZF_DEFAULT_OPTS='
       --height 75% --multi --reverse --margin=0,1
       --bind ctrl-f:page-down,ctrl-b:page-up
       --bind pgdn:preview-page-down,pgup:preview-page-up
-      --prompt=" "
-      --color bg+:#262626,fg+:#dadada,hl:#f09479,hl+:#f09479
-      --color border:#303030,info:#cfcfb0,header:#80a0ff,spinner:#36c692
-      --color prompt:#87afff,pointer:#ff5189,marker:#f09479
+      --prompt=" "
+      --color fg:#D8DEE9,bg+:#2E3440,hl:#A3BE8C,fg+:#D8DEE9,bg+:#434C5E,hl+:#A3BE8C
+      --color pointer:#BF616A,info:#4C566A,spinner:#4C566A,header:#4C566A,prompt:#81A1C1,marker:#EBCB8B
     '
 export FZF_DEFAULT_COMMAND='fd --type f --color=never -HE ".git"'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"  # default ctrl-t keybind
