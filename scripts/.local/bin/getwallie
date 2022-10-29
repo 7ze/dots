@@ -16,7 +16,7 @@ version="0.0.1"
 ####################
 
 # the dir where wallpapers are stored
-walldir="$HOME/media/wallies"
+walldir="$HOME/dots/backgrounds/.local/share/backgrounds"
 # the dir used to cache thumbnails
 cachedir="$HOME/.cache/wallhaven"
 # sxiv options
