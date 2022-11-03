@@ -22,6 +22,7 @@ export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonstartup.py"
 export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME/bundle" 
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
+export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
 
 # cache:
 export LESSHISTFILE="-"
