@@ -8,8 +8,8 @@ alias \
       rd="rmdir -pv" \
       rmrf="rm -rf" \
       mkdir="mkdir -pv" \
-      yt="youtube-dl" \
-      yta="yt -x -f bestaudio/best"
+      yt="yt-dlp" \
+      yta="yt-dlp -x -f bestaudio/best"
 
 
 # colorizing
