@@ -1,7 +1,13 @@
 #!/bin/sh
 
 xrdb "$XDG_CONFIG_HOME/x11/xresources"
-dunst &
-sxhkd &
-xcompmgr -c &
+
+autostart="dunst sxhkd mpd xcompmgr"
+
+for program in $autostart; do
+    pidof -s "$program" || "$program" &
+done >/dev/null 2>&1
+
+# Ensure that xrdb has finished running before moving on to start the WM/DE.
+[ -n "$xrdbpid" ] && wait "$xrdbpid"
 exec bspwm
