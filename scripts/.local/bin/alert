@@ -1,0 +1,3 @@
+#!/bin/sh
+
+paplay "$XDG_DATA_HOME/sounds/smw_coin.wav"
