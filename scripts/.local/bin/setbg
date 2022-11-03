@@ -10,12 +10,12 @@ file_type="$(file --mime-type -b "$1")"
 case "$file_type" in
     "image/png")
         cp "$1" "$XDG_DATA_HOME/wallies/current_wallie.png"
-        xwallpaper --output eDP1 --maximize "$XDG_DATA_HOME/wallies/current_wallie.png"
+        xwallpaper --output eDP1 --zoom "$XDG_DATA_HOME/wallies/current_wallie.png"
         notify-send "Wallpaper set!"
         ;;
     "image/jpeg")
         cp "$1" "$XDG_DATA_HOME/wallies/current_wallie.jpg"
-        xwallpaper --output eDP1 --maximize "$XDG_DATA_HOME/wallies/current_wallie.jpg"
+        xwallpaper --output eDP1 --zoom "$XDG_DATA_HOME/wallies/current_wallie.jpg"
         notify-send "Wallpaper set!"
         ;;
     *)
