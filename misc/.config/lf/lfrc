@@ -29,6 +29,10 @@ cmd mkdir ${{
   mkdir $ans
   }}
 
+cmd delete ${{
+    /home/zeus/.local/bin/cowdelete $fx
+}}
+
 cmd extract ${{
     set -f
     case $f in
@@ -67,3 +71,4 @@ map e
 # misc
 map md mkdir
 map ex extract
+map D delete
