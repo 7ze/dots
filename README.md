@@ -5,6 +5,13 @@ Welcome to my dotfiles and configurations for a basic arch linux setup
 > Note:
 in development
 
+## Scrots
+
+![vim preview](./assets/code.png)
+![telescope wallpaper picker](./assets/telescope_wallie_picker.png)
+![lf image preview](./assets/lf_image_preview.png)
+![htop](./assets/htop.png)
+
 ## Install
 
 1. Clone this repository and change directory into it:
