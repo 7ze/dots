@@ -1,9 +1,10 @@
 #!/bin/sh
 
 # author: The_philosopher
-# description: takes full screen screenshot
+# description: takes full screen screenshot, and copies it to the clipboard
 
 scrot_location="$HOME/media/pix/scrots"
 scrot_name="$scrot_location/$(date +%s).png"
-maim "$scrot_name"
-notify-send "📸" "Screenshot taken!"
+# todo: clipboard functionality not working currently due to some xclip issue
+maim "$scrot_name" | tee "$scrot_name" | xclip -selection clipboard -t image/png
+notify-send --icon=camera "Hey Handsome, headsup!" "Screenshot taken!"
