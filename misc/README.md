@@ -26,8 +26,13 @@ Dotfiles of different applications, utility or otherwise
 │   │   └── config               configuration file for cava music visualizer
 │   ├── npm
 │   │   └── npmrc                configuration file for npm package manager 
+│   ├── mpd
+│   │   └── mpd.conf             configuration file for mpd 
+│   ├── ncmpcpp
+│   │   ├── config               configuration file for ncmpcpp 
+│   │   └── bindings             bindings for ncmpcpp 
 │   └── bat
-│      └── config                configuration file for bat
+│       └── config                configuration file for bat
 └── .local
     └── misc
         ├── cheat-commands       list of commands for cheat.sh 
