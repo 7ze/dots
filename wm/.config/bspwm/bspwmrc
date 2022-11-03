@@ -22,7 +22,7 @@ _ active_border_color "#767c82"
 _ focused_border_color "#767c82"
 
 # wallpaper
-xwallpaper --output eDP1 --center "$XDG_DATA_HOME/wallies/current_wallie.png"
+setbg "$XDG_DATA_HOME/wallies/current_wallie.png"
 
 # polybar
 "$HOME/.config/polybar/launch.sh"
