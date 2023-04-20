@@ -63,3 +63,6 @@ source "$plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 # syntax highlighting
 source "$plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
+# ocaml
+[[ ! -r /home/zeus/.local/share/opam/opam-init/init.zsh ]] || source /home/zeus/.local/share/opam/opam-init/init.zsh  > /dev/null 2> /dev/null
