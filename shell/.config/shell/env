@@ -30,6 +30,8 @@ export PYLINTHOME="$XDG_CACHE_HOME/pylint"
 export BUNDLE_USER_CACHE="$XDG_CACHE_HOME/bundle" 
 
 # data:
+export GNUPGHOME="$XDG_DATA_HOME/gnupg"
+export PASSWORD_STORE_DIR="$XDG_DATA_HOME/pass"
 export HISTFILE="$XDG_DATA_HOME/shell/history"
 export VSCODE_PORTABLE="$XDG_DATA_HOME/vscode"
 export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME/bundle"
