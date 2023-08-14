@@ -59,7 +59,7 @@ alias \
       v="nvim" \
       p="doas pacman" \
       z="zathura" \
-      c="clear" \
+      s="kitty +kitten ssh zeus@dissidentx.com" \
       ka="killall" \
       rg="rg --hidden --smart-case" \
       sx="startx ~/.config/x11/xinitrc" \
