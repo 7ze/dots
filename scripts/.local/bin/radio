@@ -9,7 +9,7 @@ radio[classical]="https://live.musopen.org:8085/streamvbr0"
 radio[choir_music]="https://music.youtube.com/playlist?list=PL9HKuon05Vx-6ylBFSc3o9T55uhH8ZD3W"
 radio[gregorian_chants]="https://music.youtube.com/watch?v=m52fDOoLUks"
 
-choice=$(echo -e "nmedieval\nclassical\nchoir_music\ngregorian_chants" | dmenu -i -p "Choose which radio:")
+choice=$(echo -e "medieval\nclassical\nchoir_music\ngregorian_chants" | dmenu -i -p "Choose which radio:")
 
 url="${radio[$choice]}"
 
