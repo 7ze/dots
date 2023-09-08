@@ -16,7 +16,7 @@ alias \
 alias \
       ls="ls --color --classify --human-readable --quoting-style=escape" \
       ll="ls -lhA --color=auto --group-directories-first" \
-      l="exa -a --color=always --group-directories-first --classify --icons" \
+      l="eza -a --color=always --group-directories-first --classify --icons" \
       grep="grep --color=auto" \
       diff="diff --color=auto"
 
