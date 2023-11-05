@@ -62,6 +62,7 @@ export PATH="${HOME}/.local/bin:${PATH}:${XDG_DATA_HOME}/cargo/bin:${GEM_HOME}/b
 # random:
 
 # colorized man pages with bat:
+export MANROFFOPT="-c" # without this, there are some formatting issues
 [ -x "$(command -v bat)" ] && export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # lf icons:
