@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [[ $(xrandr --query | grep 'HDMI1 connected') ]]; then
+    xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI1 --mode 1920x1080 --pos 1920x0 --rotate normal --output VIRTUAL1 --off
+    bspc monitor eDP1 -d 1 2 3 4 5
+    bspc monitor HDMI1 -d 6 7 8 9 0
+fi
