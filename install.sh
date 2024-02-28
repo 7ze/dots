@@ -7,5 +7,5 @@ declare -a stow_folders=("dev" "zsh" "shell" "fonts" "scripts" "misc")
 
 for i in "${stow_folders[@]}"
 do
-    stow -vSt ~ "$i"
+    stow -nvSt ~ "$i" # remove -n to actually install
 done

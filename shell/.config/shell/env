@@ -21,8 +21,9 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonstartup.py" 
 export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME/bundle" 
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/config.toml"
+export DOCKER_CONFIG="$XDG_CONFIG_HOME/docker"
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
-export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
 
 # cache:
 export LESSHISTFILE="-"
@@ -67,7 +68,7 @@ export MANROFFOPT="-c" # without this, there are some formatting issues
 [ -x "$(command -v bat)" ] && export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # lf icons:
-LF_ICONS=$(sed $HOME/.config/lf/icons \
+LF_ICONS=$(sed "$HOME"/.config/lf/icons \
             -e '/^[ \t]*#/d'       \
             -e '/^[ \t]*$/d'       \
             -e 's/[ \t]\+/=/g'     \
