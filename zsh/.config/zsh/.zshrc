@@ -57,12 +57,12 @@ bindkey -s '^f' 'tmux-sessionizer\n'
 # starship prompt
 eval "$(starship init zsh)"
 
-# auto suggestions
+# auto suggestions (make sure you have zsh-autosuggestions installed)
 bindkey '^k' autosuggest-accept			# to autocomplete suggestion
-source "$plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "/usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
-# syntax highlighting
-source "$plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+# syntax highlighting (make sure you have zsh-syntax-highlighting installed)
+source "/usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # ocaml
 [[ ! -r /home/zeus/.local/share/opam/opam-init/init.zsh ]] || source /home/zeus/.local/share/opam/opam-init/init.zsh  > /dev/null 2> /dev/null
