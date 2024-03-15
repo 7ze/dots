@@ -14,16 +14,15 @@ Dotfiles of different applications, utility or otherwise
 │   │   └── config.conf          configuration file for neofetch
 │   ├── htop
 │   │   └── htoprc               configuration file for htop
-│   ├── kitty
-│   │   ├── kitty.conf           configuration file for kitty
-│   │   └── current-theme.conf   theme for kitty 
 │   ├── zathura
 │   │   └── zathurarc            configuration file for zathura
 │   ├── lf
 │   │   ├── icons                icons for lf 
 │   │   └── lfrc                 configuration file for lf file manager
-│   ├── cava
-│   │   └── config               configuration file for cava music visualizer
+│   ├── vis
+│   │   ├── vis.log              vis log file
+│   │   ├── colors               colors folder
+│   │   └── config               configuration file for vis
 │   ├── npm
 │   │   └── npmrc                configuration file for npm package manager 
 │   ├── mpd
@@ -31,6 +30,8 @@ Dotfiles of different applications, utility or otherwise
 │   ├── ncmpcpp
 │   │   ├── config               configuration file for ncmpcpp 
 │   │   └── bindings             bindings for ncmpcpp 
+│   ├── wezterm
+│   │   └── wezterm.lua          wezterm configuration file
 │   └── bat
 │       └── config                configuration file for bat
 └── .local

@@ -7,7 +7,7 @@
 # default programs:
 export VISUAL="nvim"
 export EDITOR="nvim"
-export TERMINAL="kitty"
+export TERMINAL="wezterm"
 export BROWSER="firefox"
 
 # basic variables:
@@ -52,7 +52,7 @@ export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 export OPAMROOT="$XDG_DATA_HOME/opam"
 
 # ruby:
-export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+[ -x "$(command -v ruby)" ] && export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 
 # python:
 export PYTHON_BIN="$XDG_DATA_HOME/python/bin"

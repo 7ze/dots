@@ -9,11 +9,6 @@ set wrapscroll
 set hidden
 set incsearch
 
-# set previewer and cleaner
-
-set previewer ~/.config/lf/lf_kitty_preview
-set cleaner ~/.config/lf/lf_kitty_clean
-
 ## custom functions
 
 cmd open ${{
