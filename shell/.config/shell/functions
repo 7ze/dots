@@ -16,6 +16,15 @@ lfcd () {
     fi
 }
 
+yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp" >/dev/null
+}
+
 # finding and editing a file using fzf
 fzf_find_edit() {
      local file=$(

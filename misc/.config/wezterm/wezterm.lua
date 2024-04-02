@@ -33,6 +33,16 @@ config.window_padding = {
 -- some additional key bindings --
 config.keys = {
 	{
+		key = "c",
+		mods = "CTRL|SHIFT",
+		action = wezterm.action.CopyTo("Clipboard"),
+	},
+	{
+		key = "v",
+		mods = "CTRL|SHIFT",
+		action = wezterm.action.PasteFrom("Clipboard"),
+	},
+	{
 		key = "F1",
 		mods = "CTRL|SHIFT",
 		action = wezterm.action.EmitEvent("decrease_bg_opacity"),
