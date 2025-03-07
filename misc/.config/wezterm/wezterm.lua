@@ -21,13 +21,13 @@ local config = {}
 config.disable_default_key_bindings = true
 config.color_scheme = "3024 Night"
 config.enable_tab_bar = false
-config.font_size = 11
-config.line_height = 1.4
-config.window_background_opacity = 0.75
+config.font_size = 10
+config.line_height = 1.3
+config.window_background_opacity = 0.6
 config.window_padding = {
 	left = 11,
 	right = 11,
-	top = 0,
+	top = 10,
 	bottom = 0,
 }
 -- some additional key bindings --

@@ -26,6 +26,7 @@ export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
 export ANSIBLE_HOME="${XDG_CONFIG_HOME}/ansible"
 export ANSIBLE_CONFIG="${XDG_CONFIG_HOME}/ansible.cfg"
+export RYE_HOME="${XDG_CONFIG_HOME}/rye"
 
 # cache:
 export LESSHISTFILE="-"
@@ -55,11 +56,17 @@ export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 # ocaml:
 export OPAMROOT="$XDG_DATA_HOME/opam"
 
+# haskell
+export CABAL_CONFIG="$XDG_DATA_HOME/cabal_config"
+export CABAL_DIR="$XDG_DATA_HOME/cabal"
+export GHCUP_USE_XDG_DIRS="True"
+
 # ruby:
 [ -x "$(command -v ruby)" ] && export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
 
 # python:
 export PYTHON_BIN="$XDG_DATA_HOME/python/bin"
+export PYTHONBREAKPOINT="ipdb.set_trace"
 
 # npm:
 export NPM_BIN="$XDG_DATA_HOME/npm/bin"
