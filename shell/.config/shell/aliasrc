@@ -59,11 +59,11 @@ alias \
       v="nvim" \
       p="doas pacman" \
       z="zathura" \
-      s="ssh zeus@dissidentx.com" \
+      s="ssh zeus@elysium" \
       ka="killall" \
       rg="rg --hidden --smart-case" \
       sx="startx ~/.config/x11/xinitrc" \
-      cam="mpv av://v4l2:/dev/video0 --profile=low-latency --untimed" \
+      cam="mpv av://v4l2:/dev/video2 --profile=low-latency --untimed" \
       sdn="shutdown -h now" \
       vis="export TERM=rxvt-256color && vis" \
       copy="xclip -i -selection clipboard" \

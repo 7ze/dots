@@ -21,14 +21,15 @@ local config = {}
 config.disable_default_key_bindings = true
 config.color_scheme = "3024 Night"
 config.enable_tab_bar = false
-config.font_size = 10
-config.line_height = 1.3
+config.font = wezterm.font_with_fallback({ "Iosevka Nerd Font Mono", "TX02 Nerd Font", "TX-02" })
+config.font_size = 11
+config.line_height = 1
 config.window_background_opacity = 0.6
 config.window_padding = {
-	left = 11,
-	right = 11,
+	left = 20,
+	right = 20,
 	top = 10,
-	bottom = 0,
+	bottom = 1,
 }
 -- some additional key bindings --
 config.keys = {
