@@ -71,4 +71,5 @@ alias \
       words="bat $XDG_DATA_HOME/misc/new_words.txt" \
       audible="mpv --demuxer-lavf-o=activation_bytes=72830b37" \
       vpn="doas openconnect -u fdai7682 --authgroup=01\)_HS-Fulda-SSL-VPN vpn.rz.hs-fulda.de" \
+      treeee="fd --type f --hidden --exclude .git | tree --fromfile" \
       netlab_vpn="doas openconnect -u fdai7682 --authgroup=05\)_AI-NetLab-Pro vpn.rz.hs-fulda.de" \

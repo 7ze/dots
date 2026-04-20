@@ -2,7 +2,7 @@
 
 xrdb "$XDG_CONFIG_HOME/x11/xresources"
 
-autostart="dunst sxhkd mpd xcompmgr"
+autostart="dunst sxhkd mpd xcompmgr redshift"
 
 for program in $autostart; do
     pidof -s "$program" || "$program" &

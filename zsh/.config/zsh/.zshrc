@@ -43,7 +43,7 @@ zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 # using lf to change directories
-bindkey -s '^o' 'lfcd\n'
+bindkey -s '^o' 'yy\n'
 
 # fzf
 fzf_key_bindings="/usr/share/fzf/key-bindings.zsh"
